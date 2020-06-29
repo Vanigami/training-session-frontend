@@ -13,11 +13,4 @@ class App extends React.Component {
     );
   }
 }
-
-// const mapStateToProps = (state) => {
-//   return {
-//     accounts: state.workouts,
-//   };
-// };
-
 export default connect()(App);

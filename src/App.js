@@ -1,22 +1,23 @@
 import React from "react";
 import { connect } from "react-redux";
+import WorkoutsContainer from "./containers/WorkoutsContainer";
 
 class App extends React.Component {
-  componentDidMount() {
-    fetch("http://localhost:3000/api/v1/workouts")
-      .then((resp) => resp.json())
-      .then((data) => console.log(data));
-  }
+  componentDidMount() {}
 
   render() {
-    return <div> Training Session</div>;
+    return (
+      <div className="App">
+        <WorkoutsContainer />
+      </div>
+    );
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    accounts: state.workouts,
-  };
-};
+// const mapStateToProps = (state) => {
+//   return {
+//     accounts: state.workouts,
+//   };
+// };
 
-export default connect(mapStateToProps)(App);
+export default connect()(App);

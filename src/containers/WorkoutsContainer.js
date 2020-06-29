@@ -1,9 +1,27 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import Workouts from "../components/Workouts";
 import WorkoutInput from "../components/WorkoutInput";
+import { fetchWorkouts } from "../actions/fetchWorkouts";
 
-export default class WorkoutsContainer extends Component {
+class WorkoutsContainer extends Component {
+  componentDidMount() {
+    fetchWorkouts();
+  }
   render() {
-    return <div>WorkoutsContainer</div>;
+    return (
+      <div>
+        <WorkoutInput />
+        <Workouts />
+      </div>
+    );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {
+    workouts: state.workouts,
+  };
+};
+
+export default connect(mapStateToProps)(WorkoutsContainer);

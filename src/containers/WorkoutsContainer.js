@@ -12,7 +12,7 @@ class WorkoutsContainer extends Component {
     return (
       <div>
         <WorkoutInput />
-        <Workouts />
+        <Workouts workouts={this.props.workouts} />
       </div>
     );
   }

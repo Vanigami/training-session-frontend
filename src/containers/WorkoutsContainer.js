@@ -12,6 +12,7 @@ class WorkoutsContainer extends Component {
     return (
       <div>
         <WorkoutInput />
+        <br></br>
         <Workouts workouts={this.props.workouts} />
       </div>
     );

@@ -6,7 +6,7 @@ import { fetchWorkouts } from "../actions/fetchWorkouts";
 
 class WorkoutsContainer extends Component {
   componentDidMount() {
-    fetchWorkouts();
+    this.props.fetchWorkouts();
   }
   render() {
     return (
@@ -24,4 +24,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(WorkoutsContainer);
+export default connect(mapStateToProps, { fetchWorkouts })(WorkoutsContainer);

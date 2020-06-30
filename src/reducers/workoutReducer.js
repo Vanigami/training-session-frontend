@@ -1,3 +1,8 @@
 export default function workoutReducer(state = { workouts: [] }, action) {
-  return state;
+  switch (action.type) {
+    case "FETCH_WORKOUTS":
+      return state;
+    default:
+      return state;
+  }
 }

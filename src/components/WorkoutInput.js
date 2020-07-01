@@ -30,6 +30,8 @@ export default class WorkoutInput extends Component {
             name="category"
             onChange={this.handleChange}
           />
+          <br />
+          <input type="submit" />
         </form>
       </div>
     );

@@ -9,10 +9,12 @@ export default class WorkoutInput extends Component {
     });
   };
 
+  handleSubmit = () => {};
+
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label>Workout Name: </label>
           <input
             type="text"

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { addWorkout } from "../actions/addWorkout";
 
 class WorkoutInput extends Component {
   state = { name: "", category: "" };
@@ -10,7 +11,10 @@ class WorkoutInput extends Component {
     });
   };
 
-  handleSubmit = () => {};
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.props.addWorkout(this.state);
+  };
 
   render() {
     return (
@@ -41,4 +45,4 @@ class WorkoutInput extends Component {
   }
 }
 
-export default connect(WorkoutInput);
+export default connect(null, { addWorkout })(WorkoutInput);

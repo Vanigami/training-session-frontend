@@ -1,8 +1,3 @@
-export const addWorkout = (data) => [
-
-return (dispatch) {
-    
-}
-
-
-]
+export const addWorkout = (data) => {
+  return (dispatch) => {};
+};

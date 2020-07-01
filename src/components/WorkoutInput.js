@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
-export default class WorkoutInput extends Component {
+class WorkoutInput extends Component {
   state = { name: "", category: "" };
 
   handleChange = (event) => {
@@ -39,3 +40,5 @@ export default class WorkoutInput extends Component {
     );
   }
 }
+
+export default connect(WorkoutInput);

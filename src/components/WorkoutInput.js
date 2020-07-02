@@ -19,7 +19,7 @@ class WorkoutInput extends React.Component {
     this.props.addWorkout(this.state);
     this.setState({
       name: "",
-      balance: "",
+      category: "",
     });
   };
 

@@ -1,14 +1,11 @@
 import React from "react";
 
 const Workout = (props) => {
+  console.log(props);
   return (
-    <div>
-      {/* {props.wokout.map((workout) => (
-        <li key={workout.id}>
-          {workout.name} - {workout.category}
-        </li>
-      ))} */}
-    </div>
+    <li>
+      {props.workout.name} - {props.workout.category}
+    </li>
   );
 };
 

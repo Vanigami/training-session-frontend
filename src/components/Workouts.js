@@ -7,7 +7,7 @@ const Workouts = (props) => {
     <div>
       {props.workouts.map((workout) => (
         <li key={workout.id}>
-          <Link to={`/workouts/${workout.id}`}>{workout.name}</Link>
+          <Link to={`/workout/${workout.id}`}>{workout.name}</Link>
         </li>
       ))}
     </div>

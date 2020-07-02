@@ -6,9 +6,9 @@ const Workouts = (props) => {
   return (
     <div>
       {props.workouts.map((workout) => (
-        <div key={workout.id}>
+        <li key={workout.id}>
           <Link to={`/workouts/${workout.id}`}>{workout.name}</Link>
-        </div>
+        </li>
       ))}
     </div>
   );

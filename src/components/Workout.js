@@ -2,11 +2,9 @@ import React from "react";
 
 const Workout = (props) => {
   console.log(props);
-  return (
-    <li>
-      {props.workout.name} - {props.workout.category}
-    </li>
-  );
+  let workout = props.workouts[props.match.params.id - 1];
+  console.log(workout);
+  return <li>{workout ? workout.name : null}</li>;
 };
 
 export default Workout;

@@ -15,13 +15,16 @@ class WorkoutsContainer extends React.Component {
       <div>
         <Route path="/workouts/new" component={WorkoutInput} />
         <Route
-          path="/workouts/:id"
-          render={() => <Workout workouts={this.props.workouts} />}
+          path="/workout/:id"
+          render={(routerProps) => (
+            <Workout {...routerProps} workouts={this.props.workouts} />
+          )}
         />
         <Route
-          exact
           path="/workouts"
-          render={() => <Workouts workouts={this.props.workouts} />}
+          render={(routerProps) => (
+            <Workouts {...routerProps} workouts={this.props.workouts} />
+          )}
         />
       </div>
     );

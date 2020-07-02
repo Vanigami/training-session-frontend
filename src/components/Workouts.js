@@ -1,4 +1,5 @@
 import React from "react";
+import { Route, Link } from "react-router-dom";
 import Workout from "./Workout";
 
 const Workouts = (props) => {
@@ -6,7 +7,7 @@ const Workouts = (props) => {
     <div>
       {props.workouts.map((workout) => (
         <div key={workout.id}>
-          <Workout workout={workout} />
+          <Link to={`/workouts/${workout.id}`}>{workout.name}</Link>
         </div>
       ))}
     </div>

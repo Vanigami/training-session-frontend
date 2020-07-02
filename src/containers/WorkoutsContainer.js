@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Route } from "react-router-dom";
 import { fetchWorkouts } from "../actions/fetchWorkouts";
 import Workouts from "../components/Workouts";
+import Workout from "../components/Workout";
 import WorkoutInput from "../components/WorkoutInput";
 
 class WorkoutsContainer extends React.Component {
@@ -13,6 +14,10 @@ class WorkoutsContainer extends React.Component {
     return (
       <div>
         <Route path="/workouts/new" component={WorkoutInput} />
+        <Route
+          path="/workouts/:id"
+          render={() => <Workout workouts={this.props.workouts} />}
+        />
         <Route
           exact
           path="/workouts"

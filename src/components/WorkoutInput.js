@@ -1,9 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { addWorkout } from "../actions/addWorkout";
 
-class WorkoutInput extends Component {
-  state = { name: "", category: "" };
+class WorkoutInput extends React.Component {
+  state = {
+    name: "",
+    category: "",
+  };
 
   handleChange = (event) => {
     this.setState({
@@ -14,6 +17,10 @@ class WorkoutInput extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.addWorkout(this.state);
+    this.setState({
+      name: "",
+      balance: "",
+    });
   };
 
   render() {
@@ -23,16 +30,16 @@ class WorkoutInput extends Component {
           <label>Workout Name: </label>
           <input
             type="text"
-            placeholder="Workout Name"
+            placeholder="Name"
             value={this.state.name}
             name="name"
             onChange={this.handleChange}
           />
           <br />
-          <label>Workout Category: </label>
+          <label>Category </label>
           <input
             type="text"
-            placeholder="Workout Category"
+            placeholder="Category"
             value={this.state.category}
             name="category"
             onChange={this.handleChange}

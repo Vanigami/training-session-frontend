@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from "react-redux";
+import { fetchWorkouts } from "../actions/fetchWorkouts";
 import Workouts from "../components/Workouts";
 import WorkoutInput from "../components/WorkoutInput";
-import { fetchWorkouts } from "../actions/fetchWorkouts";
 
-class WorkoutsContainer extends Component {
+class WorkoutsContainer extends React.Component {
   componentDidMount() {
     this.props.fetchWorkouts();
   }
@@ -12,7 +12,7 @@ class WorkoutsContainer extends Component {
     return (
       <div>
         <WorkoutInput />
-        <br></br>
+        <br />
         <Workouts workouts={this.props.workouts} />
       </div>
     );

@@ -13,7 +13,7 @@ class WorkoutsContainer extends React.Component {
   render() {
     return (
       <div>
-        <Route path="/workouts/new" component={WorkoutInput} />
+        <Route path="/workout/new" component={WorkoutInput} />
         <Route
           path="/workout/:id"
           render={(routerProps) => (

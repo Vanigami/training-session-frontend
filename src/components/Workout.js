@@ -9,9 +9,9 @@ const Workout = (props) => {
   )[0];
   console.log(workout);
   return (
-    <li>
+    <h2>
       {workout ? workout.name : null} - {workout ? workout.category : null}
-    </li>
+    </h2>
   );
 };
 

@@ -12,7 +12,7 @@ const Workout = (props) => {
       <h2>
         {workout ? workout.name : null} - {workout ? workout.category : null}
       </h2>
-      <ExercisesContainer />
+      <ExercisesContainer workout={workout} />
     </div>
   );
 };

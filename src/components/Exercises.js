@@ -1,4 +1,6 @@
 import React from "react";
+import { connect } from "react-redux";
+import { deleteExercise } from "../actions/deleteExercise";
 
 const Exercises = (props) => {
   const handleDelete = (events) => {};
@@ -16,4 +18,4 @@ const Exercises = (props) => {
     </div>
   );
 };
-export default Exercises;
+export default connect(null, { deleteExercise })(Exercises);

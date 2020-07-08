@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 class ExerciseInput extends React.Component {
   state = {
-    equipment: "",
+    equipment: "none",
     exercise: "",
   };
 

@@ -8,6 +8,8 @@ export const addExercise = (exercise, workoutId) => {
       body: JSON.stringify(exercise),
     })
       .then((resp) => resp.json())
-      .then((workout) => dispatch({ type: "ADD_EXERCISE", payload: exercise }));
+      .then((exercise) =>
+        dispatch({ type: "ADD_EXERCISE", payload: exercise })
+      );
   };
 };

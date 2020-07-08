@@ -1,6 +1,7 @@
 import React from "react";
 
 const Exercises = (props) => {
+  const handleDelete = (events) => {};
   return (
     <div>
       {props.exercises &&

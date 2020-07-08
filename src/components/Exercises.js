@@ -3,7 +3,9 @@ import { connect } from "react-redux";
 import { deleteExercise } from "../actions/deleteExercise";
 
 const Exercises = (props) => {
-  const handleDelete = (events) => {};
+  const handleDelete = () => {
+    props.deleteExercise();
+  };
   return (
     <div>
       {props.exercises &&
@@ -12,7 +14,11 @@ const Exercises = (props) => {
             {exercise.title} <br />
             equipment needed: {exercise.equipment}
             <br />
-            <button onclick={handleDelete}>Delete</button>
+            <button
+              onClick={() => handleDelete(exercise.id, exercise.workout.id)}
+            >
+              Delete
+            </button>
           </li>
         ))}
     </div>

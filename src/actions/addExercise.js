@@ -6,6 +6,8 @@ export const addExercise = (exercise, workoutId) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(exercise),
-    });
+    })
+      .then((resp) => resp.json())
+      .then((workout) => dispatch({ type: "ADD_WORKOUT", payload: workout }));
   };
 };

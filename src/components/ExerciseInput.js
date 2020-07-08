@@ -13,10 +13,14 @@ class ExerciseInput extends React.Component {
     });
   };
 
+  handleSubmit = (event) => {
+    event.preventDefault();
+  };
+
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label>equipment:</label>
           <select
             name="equipment"

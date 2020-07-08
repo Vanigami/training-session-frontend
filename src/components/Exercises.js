@@ -8,6 +8,8 @@ const Exercises = (props) => {
           <li key={exercise.id}>
             {exercise.title} <br />
             equipment needed: {exercise.equipment}
+            <br />
+            <button onclick={handleDelete}>Delete</button>
           </li>
         ))}
     </div>

@@ -5,6 +5,7 @@ export const addExercise = (exercise, workoutId) => {
       headers: {
         "Content-Type": "application/json",
       },
+      body: JSON.stringify(exercise),
     });
   };
 };

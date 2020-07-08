@@ -6,7 +6,7 @@ const Exercises = (props) => {
       {props.exercises &&
         props.exercises.map((exercise) => (
           <li key={exercise.id}>
-            {exercise.exercise} <br />
+            {exercise.title} <br />
             equipment needed: {exercise.equipment}
           </li>
         ))}

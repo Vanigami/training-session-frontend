@@ -1,8 +1,10 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
-import ExercisesContainer from "../containers/ExercisesContainer";
 
+import ExercisesContainer from "../containers/ExercisesContainer";
+import { Redirect } from "react-router-dom";
+debugger;
 const Workout = (props) => {
+  debugger;
   // let workout = props.workouts[props.match.params.id - 1];
   let workout = props.workouts.filter(
     (workout) => workout.id == props.match.params.id

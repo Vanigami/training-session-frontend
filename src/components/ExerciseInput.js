@@ -5,7 +5,7 @@ import { addExercise } from "../actions/addExercise";
 class ExerciseInput extends React.Component {
   state = {
     equipment: "none",
-    exercise: "",
+    title: "",
   };
 
   handleChange = (event) => {
@@ -16,7 +16,11 @@ class ExerciseInput extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    addExercise(this.state, this.props.id);
+    this.props.addExercise(this.state, this.props.workout.id);
+    this.setState({
+      equipment: "none",
+      title: "",
+    });
   };
 
   render() {
@@ -39,8 +43,8 @@ class ExerciseInput extends React.Component {
           <label>Exercise Name:</label>
           <input
             type="text"
-            name="exercise"
-            value={this.state.exercise}
+            name="title"
+            value={this.state.title}
             onChange={this.handleChange}
           />
           <input type="submit" />
@@ -49,4 +53,4 @@ class ExerciseInput extends React.Component {
     );
   }
 }
-export default connect(null)(ExerciseInput);
+export default connect(null, { addExercise })(ExerciseInput);

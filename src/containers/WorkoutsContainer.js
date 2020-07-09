@@ -5,6 +5,7 @@ import { fetchWorkouts } from "../actions/fetchWorkouts";
 import Workouts from "../components/Workouts";
 import Workout from "../components/Workout";
 import WorkoutInput from "../components/WorkoutInput";
+import { NavigationBar } from "../components/NavigationBar";
 
 class WorkoutsContainer extends React.Component {
   componentDidMount() {
@@ -13,6 +14,7 @@ class WorkoutsContainer extends React.Component {
   render() {
     return (
       <div>
+        <NavigationBar />
         <Switch>
           <Route path="/workouts/new" component={WorkoutInput} />
           <Route

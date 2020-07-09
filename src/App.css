@@ -1,0 +1,11 @@
+body {
+  background-color: yellow;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+label {
+  color: white;
+  padding: 8px;
+}

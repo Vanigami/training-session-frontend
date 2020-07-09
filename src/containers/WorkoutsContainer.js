@@ -6,6 +6,16 @@ import Workouts from "../components/Workouts";
 import Workout from "../components/Workout";
 import WorkoutInput from "../components/WorkoutInput";
 import { NavigationBar } from "../components/NavigationBar";
+import styled from "styled-components";
+const GridWrapper = styled.div`
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 1em;
+  margin-left: 6em;
+  margin-right: 6em;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(25px, auto);
+`;
 
 class WorkoutsContainer extends React.Component {
   componentDidMount() {
@@ -13,7 +23,7 @@ class WorkoutsContainer extends React.Component {
   }
   render() {
     return (
-      <div>
+      <GridWrapper>
         <NavigationBar />
         <Switch>
           <Route path="/workouts/new" component={WorkoutInput} />
@@ -30,7 +40,7 @@ class WorkoutsContainer extends React.Component {
             )}
           />
         </Switch>
-      </div>
+      </GridWrapper>
     );
   }
 }

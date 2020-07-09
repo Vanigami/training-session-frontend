@@ -9,3 +9,7 @@ label {
   color: white;
   padding: 8px;
 }
+
+li.a {
+  list-style-type: square;
+}

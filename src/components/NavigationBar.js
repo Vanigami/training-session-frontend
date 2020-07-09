@@ -17,14 +17,14 @@ import "../App.css";
 // export default Navbar;
 const Styles = styled.div`
   .navbar {
-    background-color: #222;
+    background-color: #green;
   }
   a,
   .navbar-nav,
   .navbar-light .nav-link {
     color: #9fffcb;
     &:hover {
-      color: white;
+      color: black;
     }
   }
   .navbar-brand {

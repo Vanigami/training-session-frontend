@@ -17,19 +17,19 @@ import "../App.css";
 // export default Navbar;
 const Styles = styled.div`
   .navbar {
-    background-color: #green;
+    background-color: white;
   }
   a,
   .navbar-nav,
   .navbar-light .nav-link {
-    color: #9fffcb;
+    color: white;
     &:hover {
-      color: black;
+      color: white;
     }
   }
   .navbar-brand {
     font-size: 1.4em;
-    color: #9fffcb;
+    color: white;
     &:hover {
       color: white;
     }

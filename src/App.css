@@ -6,10 +6,20 @@ body {
   text-align: center;
 }
 label {
-  color: white;
-  padding: 8px;
+  color: black;
+  padding: 3px;
+  font-weight: bold;
 }
 
 li.a {
   list-style-type: square;
+}
+
+form {
+  float: right;
+  width: 600px;
+  display: flex;
+
+  border: 3px solid black;
+  padding: 20px;
 }

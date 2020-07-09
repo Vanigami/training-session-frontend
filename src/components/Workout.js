@@ -1,7 +1,7 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
 import WorkoutEdit from "./WorkoutEdit";
-import { WorkoutsList } from "./WorkoutsList";
+
 import ExercisesContainer from "../containers/ExercisesContainer";
 
 const Workout = (props) => {

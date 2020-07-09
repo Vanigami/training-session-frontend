@@ -56,5 +56,8 @@ export const NavigationBar = () => (
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+    <div>
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/000/539/724/small/dumbbell_2__28b_w_29.jpg" />
+    </div>
   </Styles>
 );

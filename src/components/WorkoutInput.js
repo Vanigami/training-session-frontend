@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { addWorkout } from "../actions/addWorkout";
-import styled from "styled-components";
 
 class WorkoutInput extends React.Component {
   state = {

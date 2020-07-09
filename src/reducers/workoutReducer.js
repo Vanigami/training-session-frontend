@@ -28,6 +28,15 @@ export default function workoutReducer(state = { workouts: [] }, action) {
         ...state,
         workouts: delWorkouts,
       };
+    case "EDIT_WORKOUT":
+      let editWorkouts = state.workouts.map((workout) => {
+        if (workout.id === action.payload.id) {
+          return action.payload;
+        } else {
+          return workout;
+        }
+      });
+      return { ...state, workouts: editWorkouts };
 
     default:
       return state;

@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { editWorkout } from "../actions/addWorkout";
+import { editWorkout } from "../actions/editWorkout";
 
 class WorkoutEdit extends React.Component {
   state = {
@@ -16,8 +16,8 @@ class WorkoutEdit extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-
-    this.props.addWorkout(this.state);
+    let workout = { ...this.state, id: this.props.workout.id };
+    this.props.editWorkout(workout);
     this.setState({
       name: "",
       category: "",
@@ -52,5 +52,9 @@ class WorkoutEdit extends React.Component {
     );
   }
 }
+
+WorkoutEdit.defaultProps = {
+  workouts: {},
+};
 
 export default connect(null, { editWorkout })(WorkoutEdit);

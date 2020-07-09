@@ -11,7 +11,6 @@ class App extends React.Component {
       <div className="App">
         <React.Fragment>
           <Router>
-            {/* <NavigationBar /> */}
             <Switch>
               <Route exact path="/" component={NavigationBar} />
               <Route path="/workouts" component={WorkoutsContainer} />
@@ -19,7 +18,6 @@ class App extends React.Component {
             </Switch>
           </Router>
         </React.Fragment>
-        {/* <WorkoutsContainer /> */}
       </div>
     );
   }

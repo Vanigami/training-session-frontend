@@ -7,6 +7,7 @@ import Workout from "../components/Workout";
 import WorkoutInput from "../components/WorkoutInput";
 import { NavigationBar } from "../components/NavigationBar";
 import styled from "styled-components";
+import { WorkoutsList } from "../components/WorkoutsList";
 const GridWrapper = styled.div`
   display: grid;
   grid-gap: 10px;

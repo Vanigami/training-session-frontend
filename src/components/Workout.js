@@ -1,5 +1,5 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 import WorkoutEdit from "./WorkoutEdit";
 
 import ExercisesContainer from "../containers/ExercisesContainer";

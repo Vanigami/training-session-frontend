@@ -12,8 +12,12 @@ const Exercises = (props) => {
         props.exercises.map((exercise) => (
           <li key={exercise.id}>
             {exercise.title} <br />
-            equipment needed: {exercise.equipment}
+            Equipment needed: {exercise.equipment}
             <br />
+            Info:
+            {exercise.exerciseinfo}
+            <br />
+            Muscle Group: {exercise.muscle}
             <button onClick={() => handleDelete(exercise)}>Delete</button>
           </li>
         ))}

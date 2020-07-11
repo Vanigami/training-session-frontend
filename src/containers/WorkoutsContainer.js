@@ -42,7 +42,6 @@ class WorkoutsContainer extends React.Component {
               <Workouts {...routerProps} workouts={this.props.workouts} />
             )}
           />
-          )} />
         </Switch>
       </GridWrapper>
     );

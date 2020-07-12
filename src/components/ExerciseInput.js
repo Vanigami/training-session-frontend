@@ -6,6 +6,7 @@ class ExerciseInput extends React.Component {
   state = {
     equipment: "none",
     title: "",
+    muscle: "none",
   };
 
   handleChange = (event) => {
@@ -20,6 +21,7 @@ class ExerciseInput extends React.Component {
     this.setState({
       equipment: "none",
       title: "",
+      muscle: "none",
     });
   };
 
@@ -47,6 +49,24 @@ class ExerciseInput extends React.Component {
             value={this.state.title}
             onChange={this.handleChange}
           />
+          <label>Muscle Group:</label>
+          <select
+            name="muscle"
+            value={this.state.muscle}
+            onChange={this.handleChange}
+          >
+            <option>None</option>
+            <option>Quadriceps</option>
+            <option>Hamstrings</option>
+            <option>Calves</option>
+            <option>Chest</option>
+            <option>Lats</option>
+            <option>Deltoids</option>
+            <option>Triceps</option>
+            <option>Biceps</option>
+            <option>Abs</option>
+            <option>Lower Back</option>
+          </select>
           <input type="submit" />
         </form>
       </div>

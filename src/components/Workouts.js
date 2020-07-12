@@ -9,10 +9,12 @@ const Workouts = (props) => {
     <div>
       <div className="workout">
         {props.workouts.map((workout) => (
-          <li key={workout.id}>
-            <Link to={`/workouts/${workout.id}`}>
-              {workout.name} - {workout.category}
-            </Link>
+          <li className="workout" key={workout.id}>
+            <h3>
+              <Link to={`/workouts/${workout.id}`}>
+                {workout.name} <br />
+              </Link>
+            </h3>
           </li>
         ))}
         <button>Sort</button>

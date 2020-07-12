@@ -15,9 +15,9 @@ li {
   list-style: none;
   border: 1px solid #ddd;
   border-radius: 4px;
-  padding: 5px;
+  padding: 30px;
 
-  display: flex;
+  display: fixed;
 }
 
 form {
@@ -48,5 +48,5 @@ form {
 
 .button {
   position: absolute;
-  right: 0;
+  float: right;
 }

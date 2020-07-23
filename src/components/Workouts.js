@@ -15,6 +15,7 @@ const Workouts = (props) => {
                 <Link to={`/workouts/${workout.id}`}>
                   {workout.name} <br />
                 </Link>
+                {workout.category}
               </h3>
             </li>
           ))}

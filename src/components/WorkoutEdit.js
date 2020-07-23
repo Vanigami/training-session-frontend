@@ -13,7 +13,7 @@ class WorkoutEdit extends React.Component {
       [event.target.name]: event.target.value,
     });
   };
-
+  //add form calidation so that user cannot enter empty workout title
   handleSubmit = (event) => {
     event.preventDefault();
     let workout = { ...this.state, id: this.props.workout.id };

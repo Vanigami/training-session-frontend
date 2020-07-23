@@ -6,21 +6,24 @@ import "../App.css";
 
 const Workouts = (props) => {
   return (
-    <div>
-      <div className="workout">
-        {props.workouts.map((workout) => (
-          <li className="workout" key={workout.id}>
-            <h3>
-              <Link to={`/workouts/${workout.id}`}>
-                {workout.name} <br />
-              </Link>
-            </h3>
-          </li>
-        ))}
-        <button>Sort</button>
+    <>
+      <div>
+        <div className="workout">
+          {props.workouts.map((workout) => (
+            <li className="workout" key={workout.id}>
+              <h3>
+                <Link to={`/workouts/${workout.id}`}>
+                  {workout.name} <br />
+                </Link>
+              </h3>
+            </li>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
+
+  return <div>hello</div>;
 };
 
 export default Workouts;

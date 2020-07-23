@@ -14,13 +14,22 @@ class WorkoutInput extends React.Component {
     });
   };
 
+  formatInput = (event) => {
+    const attribute = event.target.getAttribute("name");
+    this.setState({ [attribute]: event.target.value.trim() });
+  };
+
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.addWorkout(this.state);
-    this.setState({
-      name: "",
-      category: "",
-    });
+    if (this.state.name === "" || this.state.name === " ") {
+      alert("Every workout needs a name");
+    } else {
+      this.props.addWorkout(this.state);
+      this.setState({
+        name: "",
+        category: "",
+      });
+    }
   };
 
   render() {
@@ -29,6 +38,7 @@ class WorkoutInput extends React.Component {
         <form onSubmit={this.handleSubmit}>
           <label>Workout Name: </label>
           <input
+            onBlur={this.props.formatInput}
             type="text"
             placeholder="Your killer workout here!"
             value={this.state.name}

@@ -38,14 +38,16 @@ class WorkoutEdit extends React.Component {
           />
           <br />
           <label>Category </label>
-          <input
-            type="text"
-            placeholder="Category"
+          <select
             value={this.state.category}
             name="category"
             onChange={this.handleChange}
-          />
-          <br />
+          >
+            <option>Strength</option>
+            <option>Endurance</option>
+            <option>Balance</option>
+            <option>Flexibility</option>
+          </select>
           <input type="submit" />
         </form>
       </div>

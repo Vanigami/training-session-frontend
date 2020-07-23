@@ -51,6 +51,7 @@ class WorkoutsContainer extends React.Component {
 const mapStateToProps = (state) => {
   return {
     workouts: state.workouts,
+    loading: state.loading,
   };
 };
 

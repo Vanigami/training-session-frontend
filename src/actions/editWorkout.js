@@ -1,6 +1,6 @@
 export const editWorkout = (data) => {
   return (dispatch) => {
-    fetch(`http://localhost:3000/api/v1/workouts/${data.id}`, {
+    fetch(`http://localhost:3001/api/v1/workouts/${data.id}`, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

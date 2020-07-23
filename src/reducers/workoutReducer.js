@@ -1,4 +1,7 @@
-export default function workoutReducer(state = { workouts: [] }, action) {
+export default function workoutReducer(
+  state = { workouts: [], loading: false },
+  action
+) {
   switch (action.type) {
     case "FETCH_WORKOUTS":
       return { workouts: action.payload };

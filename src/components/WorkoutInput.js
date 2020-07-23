@@ -23,6 +23,7 @@ class WorkoutInput extends React.Component {
       alert("Every workout needs a name");
     } else {
       this.props.addWorkout(this.state);
+      this.props.history.push("/workouts");
       this.setState({
         name: trimValue,
         category: "",

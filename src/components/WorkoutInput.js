@@ -5,7 +5,7 @@ import { addWorkout } from "../actions/addWorkout";
 class WorkoutInput extends React.Component {
   state = {
     name: "",
-    category: "",
+    category: "None",
   };
 
   handleChange = (event) => {
@@ -26,7 +26,7 @@ class WorkoutInput extends React.Component {
       this.props.history.push("/workouts");
       this.setState({
         name: trimValue,
-        category: "",
+        category: "None",
       });
     }
   };
@@ -46,10 +46,12 @@ class WorkoutInput extends React.Component {
           <br />
           <label>Category </label>
           <select
+            defaultValue={this.state.category}
             value={this.state.category}
             name="category"
             onChange={this.handleChange}
           >
+            <option>None</option>
             <option>Strength</option>
             <option>Endurance</option>
             <option>Balance</option>

@@ -8,9 +8,9 @@ const Workouts = (props) => {
   return (
     <>
       <div>
-        <div className="workout">
+        <div class="card">
           {props.workouts.map((workout) => (
-            <li className="workout" key={workout.id}>
+            <li class="container" key={workout.id}>
               <h3>
                 <Link to={`/workouts/${workout.id}`}>
                   {workout.name} <br />

@@ -22,8 +22,6 @@ const Workouts = (props) => {
       </div>
     </>
   );
-
-  return <div>hello</div>;
 };
 
 export default Workouts;

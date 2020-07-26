@@ -16,31 +16,31 @@ import "../App.css";
 //   );
 // };
 // export default Navbar;
-const Styles = styled.div`
-  .navbar {
-    background-color: white;
-  }
-  a,
-  .navbar-nav,
-  .navbar-light .nav-link {
-    color: white;
-    &:hover {
-      color: white;
-    }
-  }
-  .navbar-brand {
-    font-size: 1.4em;
-    color: white;
-    &:hover {
-      color: white;
-    }
-  }
-  .form-center {
-    position: absolute !important;
-    left: 25%;
-    right: 25%;
-  }
-`;
+// const Styles = styled.div`
+//   .navbar {
+//     background-color: white;
+//   }
+//   a,
+//   .navbar-nav,
+//   .navbar-light .nav-link {
+//     color: white;
+//     &:hover {
+//       color: white;
+//     }
+//   }
+//   .navbar-brand {
+//     font-size: 1.4em;
+//     color: white;
+//     &:hover {
+//       color: white;
+//     }
+//   }
+//   .form-center {
+//     position: absolute !important;
+//     left: 25%;
+//     right: 25%;
+//   }
+// `;
 export const NavigationBar = () => (
   // <>
   <div id="navbar">

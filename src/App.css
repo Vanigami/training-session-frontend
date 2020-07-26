@@ -72,11 +72,15 @@ form {
 }
 
 ul#horizontal-list {
-  min-width: 696px;
+  min-width: 490px;
   list-style: none;
   padding-top: 20px;
 }
 
 ul#horizontal-list li {
   display: inline;
+}
+
+.Link {
+  color: red;
 }

@@ -5,6 +5,7 @@ import thunk from "redux-thunk";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router } from "react-router-dom";
 import workoutReducer from "./reducers/workoutReducer";
+import { LinkContainer } from "react-router-bootstrap";
 
 import App from "./App";
 
@@ -17,9 +18,11 @@ let store = createStore(
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
-      <App />
-    </Router>
+    <React.Fragment>
+      <Router>
+        <App />
+      </Router>
+    </React.Fragment>
   </Provider>,
 
   document.getElementById("root")

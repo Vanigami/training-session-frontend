@@ -10,14 +10,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <React.Fragment>
-          <Router>
-            <Switch>
-              <Route exact path="/" component={NavigationBar} />
-              <Route path="/workouts" component={WorkoutsContainer} />
-            </Switch>
-          </Router>
-        </React.Fragment>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={NavigationBar} />
+            <Route path="/workouts" component={WorkoutsContainer} />
+          </Switch>
+        </Router>
       </div>
     );
   }

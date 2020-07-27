@@ -22,10 +22,10 @@ A web application that stores user-submitted workout and exercise data. Allows t
 
 
 ## Deploy Instructions: 
-- Clone this repo to local machine git clone <this-repo-url>.
-- Ensure backend API is running at http://localhost:3001/
+- Clone this repo to local machine ```git clone <this-repo-url>```.
+- Ensure backend API is running at ```http://localhost:3001/```
 - Run ```npm install``` to install dependencies.
-- Run npm start to start server
+- Run ```npm start``` to start server
 
 
 

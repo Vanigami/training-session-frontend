@@ -14,6 +14,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={NavigationBar} />
             <Route path="/workouts" component={WorkoutsContainer} />
+            <Route path="/workouts/new" component={WorkoutInput} />
           </Switch>
         </Router>
       </div>

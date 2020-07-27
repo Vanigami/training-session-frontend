@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { addWorkout } from "../actions/addWorkout";
+import NavigationBar from "./NavigationBar";
 
 class WorkoutInput extends React.Component {
   state = {
@@ -30,37 +31,46 @@ class WorkoutInput extends React.Component {
       });
     }
   };
+  backBtn = (event) => {
+    this.props.history.push("/workouts");
+  };
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>Workout Name: </label>
-          <input
-            type="text"
-            placeholder="Your killer workout here!"
-            value={this.state.name}
-            name="name"
-            onChange={this.handleChange}
-          />
-          <br />
-          <label>Category </label>
-          <select
-            defaultValue={this.state.category}
-            value={this.state.category}
-            name="category"
-            onChange={this.handleChange}
-          >
-            <option>None</option>
-            <option>Strength</option>
-            <option>Endurance</option>
-            <option>Balance</option>
-            <option>Flexibility</option>
-          </select>
-          <br />
-          <input type="submit" />
-        </form>
-      </div>
+      <>
+        <div>
+          <h3></h3>
+        </div>
+        <div>
+          <form onSubmit={this.handleSubmit}>
+            <label>Workout Name: </label>
+            <input
+              type="text"
+              placeholder="Your killer workout here!"
+              value={this.state.name}
+              name="name"
+              onChange={this.handleChange}
+            />
+            <br />
+            <label>Category </label>
+            <select
+              defaultValue={this.state.category}
+              value={this.state.category}
+              name="category"
+              onChange={this.handleChange}
+            >
+              <option>None</option>
+              <option>Strength</option>
+              <option>Endurance</option>
+              <option>Balance</option>
+              <option>Flexibility</option>
+            </select>
+            <br />
+            <input type="submit" />
+            <button onClick={this.backBtn}>Back </button>
+          </form>
+        </div>
+      </>
     );
   }
 }

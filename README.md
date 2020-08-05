@@ -1,6 +1,8 @@
 A web application that stores user-submitted workout and exercise data. Allows the user to update or delete their data. 
 ![Training Session Demo](TrainingSessionDemo.gif)
 
+
+[video demo](https://www.youtube.com/watch?v=4PK4Rw1SW1k)
 ## Features
   - Uses Redux Thunk Middleware to send and recieve data from an API 
   - Renders JavaScript and HTML (JSX) onto the DOM via React components

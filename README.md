@@ -1,4 +1,5 @@
 A web application that stores user-submitted workout and exercise data. Allows the user to update or delete their data. 
+
 ![Training Session Demo](TrainingSessionDemo.gif)
 
 

@@ -84,3 +84,8 @@ ul#horizontal-list li {
 .Link {
   color: red;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}

@@ -21,7 +21,7 @@ const Workouts = (props) => {
   };
 
   return (
-    <>
+    <div class="flex-container">
       <div onSubmit={props.handleSubmit}>
         <label>{toggle}</label>
         <div class="card">
@@ -29,19 +29,17 @@ const Workouts = (props) => {
 
           {sortByAlph().map((workout) => (
             <li class="container" key={workout.id} value={workout.id}>
-              <h3>
-                <Link to={`/workouts/${workout.id}`}>
-                  {workout.name} <br />
-                </Link>
-                {workout.category}
+              <Link to={`/workouts/${workout.id}`}>
+                {workout.name} <br />
+              </Link>
+              {workout.category}
 
-                {/* <Counter /> */}
-              </h3>
+              {/* <Counter /> */}
             </li>
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

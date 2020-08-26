@@ -22,6 +22,7 @@ const Workouts = (props) => {
 
   return (
     <div class="flex-container">
+      <h2>Workouts</h2>
       <div onSubmit={props.handleSubmit}>
         <label>{toggle}</label>
         <div class="card">

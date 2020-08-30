@@ -6,6 +6,8 @@ export default class Home extends Component {
     return (
       <div>
         <NavigationBar />
+        <button>Get Fit</button>
+        <div>Lobster</div>
       </div>
     );
   }

@@ -17,15 +17,25 @@ const Exercises = (props) => {
             </div>
             <div>Equipment needed: {exercise.equipment}</div>
             <br />
-            Info:
-            {exercise.exerciseinfo}
-            Muscle Group: {exercise.muscle}
-            <br />
-            <button className="button" onClick={() => handleDelete(exercise)}>
-              <i class="fas fa-trash" fa-2x></i>
-            </button>
-            <br />
-            <br />
+            <div class="info">
+              Info:
+              <br />
+              {exercise.exerciseinfo}
+            </div>
+            <div>
+              Muscle Group: {exercise.muscle}
+              <br />
+              Sets: {exercise.setting_repetitionunit}
+              <br />
+              <br />
+              Category: {exercise.exercisecategory}
+              <br />
+              <button className="button" onClick={() => handleDelete(exercise)}>
+                <i class="fas fa-trash" fa-2x></i>
+              </button>
+              <br />
+              <br />
+            </div>
           </div>
         ))}
     </div>

@@ -7,6 +7,8 @@ class ExerciseInput extends React.Component {
     equipment: "none",
     title: "",
     muscle: "none",
+    setting_repetitionunit: "",
+    exercisecategory: "",
   };
 
   handleChange = (event) => {
@@ -22,6 +24,8 @@ class ExerciseInput extends React.Component {
       equipment: "none",
       title: "",
       muscle: "none",
+      setting_repetitionunit: "",
+      exercisecategory: "",
     });
   };
 
@@ -68,7 +72,16 @@ class ExerciseInput extends React.Component {
               <option>Abs</option>
               <option>Lower Back</option>
             </select>
+            <br />
+            <label>Category:</label>
+            <input
+              type="text"
+              name="exercisecategory"
+              value={this.state.exercisecategory}
+              onChange={this.handleChange}
+            />
           </ul>
+
           <input type="submit" />
         </form>
       </div>

@@ -27,7 +27,6 @@ class WorkoutsContainer extends React.Component {
   render() {
     return (
       <GridWrapper>
-        <NavigationBar />
         <Switch>
           <Route path="/workouts/new" component={WorkoutInput} />
           <Route

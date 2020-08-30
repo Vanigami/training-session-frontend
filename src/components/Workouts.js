@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Route, Link } from "react-router-dom";
-import Workout from "./Workout";
-import Counter from "./Counter";
+
 import "../App.css";
 
 const Workouts = (props) => {
   const [toggle, setToggle] = useState(false);
 
-  const sortByAlph = () => {
+  const alphabetize = () => {
     console.log(toggle);
     if (toggle) {
       return [...props.workouts].sort((a, b) => (a.name > b.name ? 1 : -1));
@@ -28,7 +27,7 @@ const Workouts = (props) => {
         <div class="card">
           <button onClick={handleToggledClick}>Alphabetize!</button>
 
-          {sortByAlph().map((workout) => (
+          {alphabetize().map((workout) => (
             <li class="container" key={workout.id} value={workout.id}>
               <Link to={`/workouts/${workout.id}`}>
                 {workout.name} <br />

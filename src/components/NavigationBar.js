@@ -41,7 +41,7 @@ import "../App.css";
 //     right: 25%;
 //   }
 // `;
-export const NavigationBar = () => (
+const NavigationBar = () => (
   // <>
   <div id="navbar">
     <div class="table">
@@ -69,3 +69,4 @@ export const NavigationBar = () => (
   //    k
   // </>
 );
+export default NavigationBar;

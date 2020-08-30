@@ -88,4 +88,5 @@ ul#horizontal-list li {
 .flex-container {
   display: flex;
   flex-direction: column;
+  position: center;
 }

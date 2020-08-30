@@ -16,7 +16,6 @@ label {
 }
 
 form {
-  float: right;
   width: auto;
   display: flex;
   font-family: "Arvo", serif;

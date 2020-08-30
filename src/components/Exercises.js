@@ -27,7 +27,6 @@ const Exercises = (props) => {
               <br />
               Sets: {exercise.setting_repetitionunit}
               <br />
-              <br />
               Category: {exercise.exercisecategory}
               <br />
               <button className="button" onClick={() => handleDelete(exercise)}>

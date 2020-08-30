@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { addExercise } from "../actions/addExercise";
+import NavigationBar from "./NavigationBar";
 
 class ExerciseInput extends React.Component {
   state = {
@@ -9,6 +10,7 @@ class ExerciseInput extends React.Component {
     muscle: "none",
     setting_repetitionunit: "",
     exercisecategory: "",
+    exerciseinfo: "Sweat!",
   };
 
   handleChange = (event) => {
@@ -26,6 +28,7 @@ class ExerciseInput extends React.Component {
       muscle: "none",
       setting_repetitionunit: "",
       exercisecategory: "",
+      exerciseinfo: "Sweat!",
     });
   };
 
@@ -34,7 +37,7 @@ class ExerciseInput extends React.Component {
       <div>
         <form onSubmit={this.handleSubmit}>
           <ul>
-            <label>equipment:</label>
+            <label>Equipment: </label>
             <select
               name="equipment"
               value={this.state.equipment}
@@ -46,6 +49,14 @@ class ExerciseInput extends React.Component {
               <option>kettlebell</option>
               <option>resistance bands</option>
             </select>
+            <br />
+            <label>Info: </label>
+            <textarea
+              type="text"
+              name="exerciseinfo"
+              value={this.state.exerciseinfo}
+              onChange={this.handleChange}
+            />
             <br />
             <label>Exercise Name:</label>
             <input

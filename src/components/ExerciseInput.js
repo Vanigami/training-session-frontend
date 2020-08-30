@@ -73,6 +73,14 @@ class ExerciseInput extends React.Component {
               <option>Lower Back</option>
             </select>
             <br />
+            <label>Sets: </label>
+            <input
+              type="number"
+              name="setting_repetitionunit"
+              value={this.state.setting_repetitionunit}
+              onChange={this.handleChange}
+            ></input>
+            <br />
             <label>Category:</label>
             <input
               type="text"

@@ -100,8 +100,11 @@ class ExerciseInput extends React.Component {
               onChange={this.handleChange}
             />
           </ul>
-
-          <input type="submit" />
+          <button className="submit" type="submit">
+            Add
+            <br />
+            <i class="fas fa-plus"></i>
+          </button>
         </form>
       </div>
     );

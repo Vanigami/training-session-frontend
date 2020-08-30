@@ -41,18 +41,20 @@ class WorkoutInput extends React.Component {
         <div>
           <h3></h3>
         </div>
-        <div>
+        <div class="flex-container">
           <form onSubmit={this.handleSubmit}>
-            <label>Workout Name: </label>
+            <span>Workout Name: </span>
             <input
               type="text"
-              placeholder="Your killer workout here!"
+              placeholder="Add you workout name! "
               value={this.state.name}
               name="name"
               onChange={this.handleChange}
             />
-            <br />
-            <label>Category </label>
+          </form>
+          <br />
+          <form>
+            <label>Category: </label>
             <select
               defaultValue={this.state.category}
               value={this.state.category}
@@ -65,6 +67,7 @@ class WorkoutInput extends React.Component {
               <option>Balance</option>
               <option>Flexibility</option>
             </select>
+
             <br />
             <input type="submit" />
             <button onClick={this.backBtn}>Back </button>

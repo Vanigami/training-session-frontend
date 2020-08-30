@@ -27,7 +27,7 @@ li {
 
 form {
   float: right;
-  width: 800px;
+  width: auto;
   display: flex;
   font-family: "Arvo", serif;
 

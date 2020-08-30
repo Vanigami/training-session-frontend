@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Route, Link } from "react-router-dom";
+import NavigationBar from "./NavigationBar";
 
 import "../App.css";
 
@@ -21,6 +22,7 @@ const Workouts = (props) => {
 
   return (
     <div class="flex-container">
+      <NavigationBar />
       <h2>Workouts</h2>
       <div onSubmit={props.handleSubmit}>
         <label>{toggle}</label>

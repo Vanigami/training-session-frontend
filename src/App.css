@@ -15,16 +15,6 @@ label {
   font-family: "Arvo", serif;
 }
 
-li {
-  list-style: none;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 30px;
-  font-family: "Arvo", serif;
-
-  display: fixed;
-}
-
 form {
   float: right;
   width: auto;
@@ -35,6 +25,10 @@ form {
   padding: 20px;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
 /* .workout {
   display: flex;
 

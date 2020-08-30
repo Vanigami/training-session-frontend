@@ -7,33 +7,28 @@ const Exercises = (props) => {
     props.deleteExercise(exercise.id, exercise.workout_id);
   };
   return (
-    <>
-      <div>
-        {props.exercises &&
-          props.exercises.map((exercise) => (
-            <li className="exercise" key={exercise.id}>
-              <h2>{exercise.title}</h2>
+    <div>
+      {props.exercises &&
+        props.exercises.map((exercise) => (
+          <div class="card">
+            <div key={exercise.id}>
+              <h3>{exercise.title}</h3>
               <br />
-              <li>Equipment needed: {exercise.equipment}</li>
-              <br />
-              <li className="info">
-                Info:
-                {exercise.exerciseinfo}
-              </li>
-              Muscle Group: {exercise.muscle}
-              <br />
-              <div>
-                <button
-                  className="button"
-                  onClick={() => handleDelete(exercise)}
-                >
-                  Delete
-                </button>
-              </div>
-            </li>
-          ))}
-      </div>
-    </>
+            </div>
+            <div>Equipment needed: {exercise.equipment}</div>
+            <br />
+            Info:
+            {exercise.exerciseinfo}
+            Muscle Group: {exercise.muscle}
+            <br />
+            <button className="button" onClick={() => handleDelete(exercise)}>
+              Delete
+            </button>
+            <br />
+            <br />
+          </div>
+        ))}
+    </div>
   );
 };
 export default connect(null, { deleteExercise })(Exercises);

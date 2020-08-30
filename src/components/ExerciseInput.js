@@ -29,44 +29,46 @@ class ExerciseInput extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>equipment:</label>
-          <select
-            name="equipment"
-            value={this.state.equipment}
-            onChange={this.handleChange}
-          >
-            <option>none</option>
-            <option>dumbells</option>
-            <option>barbell</option>
-            <option>kettlebell</option>
-            <option>resistance bands</option>
-          </select>
-          <br />
-          <label>Exercise Name:</label>
-          <input
-            type="text"
-            name="title"
-            value={this.state.title}
-            onChange={this.handleChange}
-          />
-          <label>Muscle Group:</label>
-          <select
-            name="muscle"
-            value={this.state.muscle}
-            onChange={this.handleChange}
-          >
-            <option>None</option>
-            <option>Quadriceps</option>
-            <option>Hamstrings</option>
-            <option>Calves</option>
-            <option>Chest</option>
-            <option>Lats</option>
-            <option>Deltoids</option>
-            <option>Triceps</option>
-            <option>Biceps</option>
-            <option>Abs</option>
-            <option>Lower Back</option>
-          </select>
+          <ul>
+            <label>equipment:</label>
+            <select
+              name="equipment"
+              value={this.state.equipment}
+              onChange={this.handleChange}
+            >
+              <option>none</option>
+              <option>dumbells</option>
+              <option>barbell</option>
+              <option>kettlebell</option>
+              <option>resistance bands</option>
+            </select>
+            <br />
+            <label>Exercise Name:</label>
+            <input
+              type="text"
+              name="title"
+              value={this.state.title}
+              onChange={this.handleChange}
+            />
+            <label>Muscle Group:</label>
+            <select
+              name="muscle"
+              value={this.state.muscle}
+              onChange={this.handleChange}
+            >
+              <option>None</option>
+              <option>Quadriceps</option>
+              <option>Hamstrings</option>
+              <option>Calves</option>
+              <option>Chest</option>
+              <option>Lats</option>
+              <option>Deltoids</option>
+              <option>Triceps</option>
+              <option>Biceps</option>
+              <option>Abs</option>
+              <option>Lower Back</option>
+            </select>
+          </ul>
           <input type="submit" />
         </form>
       </div>

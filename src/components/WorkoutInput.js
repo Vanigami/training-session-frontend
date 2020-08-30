@@ -39,6 +39,7 @@ class WorkoutInput extends React.Component {
     return (
       <>
         <div>
+          <button onClick={this.backBtn}>Back </button>
           <h3></h3>
         </div>
         <div class="flex-container">
@@ -70,7 +71,6 @@ class WorkoutInput extends React.Component {
 
             <br />
             <input type="submit" />
-            <button onClick={this.backBtn}>Back </button>
           </form>
         </div>
       </>

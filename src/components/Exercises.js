@@ -22,7 +22,7 @@ const Exercises = (props) => {
             Muscle Group: {exercise.muscle}
             <br />
             <button className="button" onClick={() => handleDelete(exercise)}>
-              Delete
+              <i class="fas fa-trash" fa-2x></i>
             </button>
             <br />
             <br />

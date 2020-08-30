@@ -47,9 +47,25 @@ form {
 }
 
 .button {
-  position: absolute;
-  float: right;
-  font-family: "Arvo", serif;
+  box-shadow: 8px 8px 25px 3px #00304e !important;
+
+  color: #dcd5d5;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  width: 80px;
+
+  background-color: #00304e;
+  opacity: 0.9;
+  border: black;
+  border-radius: 10%;
+  margin: 50px 2px;
+  cursor: pointer;
 }
 
 .card {

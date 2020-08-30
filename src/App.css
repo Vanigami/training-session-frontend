@@ -1,6 +1,5 @@
 body {
-  background-color: yellow;
-  color: white;
+  background: url(./images/ts-bg.png) no-repeat center fixed;
   padding: 40px;
   font-family: Arial;
   text-align: center;

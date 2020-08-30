@@ -40,7 +40,6 @@ class WorkoutInput extends React.Component {
       <>
         <div>
           <button onClick={this.backBtn}>Back </button>
-          <h3></h3>
         </div>
         <div class="flex-container">
           <form onSubmit={this.handleSubmit}>

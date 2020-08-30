@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { addExercise } from "../actions/addExercise";
 import NavigationBar from "./NavigationBar";
+import { Link } from "react-router-dom";
 
 class ExerciseInput extends React.Component {
   state = {
@@ -35,6 +36,9 @@ class ExerciseInput extends React.Component {
   render() {
     return (
       <div>
+        <Link to="/workouts">
+          <button>Back </button>
+        </Link>
         <form onSubmit={this.handleSubmit}>
           <ul>
             <label>Equipment: </label>

@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+
 import { deleteExercise } from "../actions/deleteExercise";
 
 const Exercises = (props) => {

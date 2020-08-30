@@ -43,14 +43,10 @@ import "../App.css";
 // `;
 const NavigationBar = () => (
   // <>
-  <div id="navbar">
-    <div class="table">
-      <ul id="horizontal-list">
-        <Link to="/"> Home </Link>
-        <Link to="/workouts/new"> Add Workout </Link>
-        <Link to="/workouts"> Workouts </Link>
-      </ul>
-    </div>
+  <div>
+    <button>
+      <Link to="/workouts/new"> Add Workout </Link>
+    </button>
   </div>
   // {/* <Styles>
   //   //   <Navbar expand="lg">

@@ -22,25 +22,28 @@ const Workouts = (props) => {
 
   return (
     <div class="flex-container">
-      <NavigationBar />
       <h2>Workouts</h2>
+      <br />
+      <NavigationBar />
+      <br />
       <div onSubmit={props.handleSubmit}>
         <label>{toggle}</label>
         <div class="card">
           <button onClick={handleToggledClick}>Alphabetize!</button>
 
           {alphabetize().map((workout) => (
-            <li class="container" key={workout.id} value={workout.id}>
+            <div class="card" key={workout.id} value={workout.id}>
               <Link to={`/workouts/${workout.id}`}>
                 {workout.name} <br />
               </Link>
               {workout.category}
 
               {/* <Counter /> */}
-            </li>
+            </div>
           ))}
         </div>
       </div>
+      <br />
     </div>
   );
 };
